@@ -29,6 +29,13 @@ jobs:
         python --version
         python -c "import pandas; import pytest; print('Dependencies OK')"
 
+    - name: Verify project structure
+      run: |
+        ls -la
+        ls -la src/
+        ls -la tests/
+        python -c "import sys; sys.path.insert(0, '.'); from src.hunter import ThreatHunter; print('Import test OK')"
+
     - name: Run tests with pytest
       run: |
-        python -m pytest tests/ -v
+        python -m pytest
