@@ -1,0 +1,5 @@
+{"timestamp": "2024-06-01T08:15:00Z", "rule": {"id": "5503"}, "srcip": "192.168.1.23", "user": "alice"}
+{"timestamp": "2024-06-01T09:10:32Z", "rule": {"id": "5503"}, "srcip": "192.168.1.45", "user": "bob"}
+{"timestamp": "2024-06-01T10:25:10Z", "rule": {"id": "5503"}, "srcip": "10.0.0.12", "user": "admin"}
+{"timestamp": "2024-06-01T11:17:59Z", "rule": {"id": "1002"}, "srcip": "172.16.0.5", "user": "syslog"}
+{"timestamp": "2024-06-01T11:45:22Z", "rule": {"id": "31104"}, "srcip": "127.0.0.1", "user": "www-data"}
