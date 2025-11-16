@@ -28,6 +28,10 @@ def test_load_alerts_multiple_files():
         alerts = load_alerts(temp_dir)
         assert isinstance(alerts, list)
         assert len(alerts) == 2
-        assert alerts[0]["user"] == "alice"
-        assert alerts[1]["user"] == "bob"
+        
+        # 不依賴順序，檢查兩個用戶都存在
+        users = [alert["user"] for alert in alerts]
+        assert "alice" in users
+        assert "bob" in users
+        assert len(users) == 2
 
